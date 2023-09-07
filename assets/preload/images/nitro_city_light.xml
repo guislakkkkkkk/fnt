@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="nitro_city_light.png">
+	<!-- Created with Notepad lmfao -->
+	<!-- (insert link to download notepad because thats totally not a default application lol) -->
+	<SubTexture name="toLight0000" x="0" y="0" width="2560" height="1340"/>
+	<SubTexture name="toLight0001" x="2560" y="0" width="2560" height="1340"/>
+	<SubTexture name="toLight0002" x="0" y="1340" width="2560" height="1340"/>
+	<SubTexture name="toLight0003" x="2560" y="1340" width="2560" height="1340"/>
+	<SubTexture name="toLight0004" x="0" y="2680" width="2560" height="1340"/>
+	<SubTexture name="toLight0005" x="2560" y="2680" width="2560" height="1340"/>
+	<SubTexture name="toLight0006" x="0" y="4020" width="2560" height="1340"/>
+	<SubTexture name="toLight0007" x="2560" y="4020" width="2560" height="1340"/>
+
+	<SubTexture name="toDark0000" x="2560" y="4020" width="2560" height="1340"/>
+	<SubTexture name="toDark0001" x="0" y="4020" width="2560" height="1340"/>
+	<SubTexture name="toDark0002" x="2560" y="2680" width="2560" height="1340"/>
+	<SubTexture name="toDark0003" x="0" y="2680" width="2560" height="1340"/>
+	<SubTexture name="toDark0004" x="2560" y="1340" width="2560" height="1340"/>
+	<SubTexture name="toDark0005" x="0" y="1340" width="2560" height="1340"/>
+	<SubTexture name="toDark0006" x="2560" y="0" width="2560" height="1340"/>
+	<SubTexture name="toDark0007" x="0" y="0" width="2560" height="1340"/>
+	
+</TextureAtlas>

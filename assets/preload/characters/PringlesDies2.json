@@ -1,0 +1,34 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "dies",
+			"fps": 24,
+			"name": "pringles death",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/pringles_dies",
+	"position": [
+		-216,
+		-63
+	],
+	"healthicon": "torrent",
+	"flip_x": false,
+	"healthbar_colors": [
+		249,
+		245,
+		148
+	],
+	"camera_position": [
+		-109,
+		168
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="textwin.png">
+<SubTexture name="textwin 10000" x="1987" y="627" width="710" height="306" frameX="-35" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 20000" x="1987" y="933" width="615" height="306" frameX="-83" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 30000" x="1286" y="717" width="666" height="355" frameX="-57" frameY="-42" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 40000" x="0" y="1145" width="704" height="355" frameX="-38" frameY="-42" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 50000" x="0" y="406" width="586" height="373" frameX="-97" frameY="-33" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 60000" x="1987" y="1239" width="628" height="306" frameX="-76" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 70000" x="1987" y="0" width="719" height="314" frameX="-31" frameY="-62" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 80000" x="1987" y="314" width="660" height="313" frameX="-60" frameY="-63" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 90000" x="1286" y="0" width="701" height="361" frameX="-40" frameY="-39" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 100000" x="704" y="1145" width="699" height="327" frameX="-41" frameY="-56" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 110000" x="0" y="1818" width="708" height="306" frameX="-36" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 120000" x="708" y="1818" width="714" height="306" frameX="-33" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 130000" x="651" y="779" width="630" height="306" frameX="-75" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 140000" x="0" y="1500" width="704" height="318" frameX="-38" frameY="-60" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 150000" x="704" y="1500" width="674" height="318" frameX="-53" frameY="-60" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 160000" x="1422" y="1818" width="642" height="306" frameX="-69" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 170000" x="1403" y="1145" width="559" height="306" frameX="-111" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 180000" x="0" y="2124" width="651" height="306" frameX="-65" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 190000" x="2064" y="1818" width="621" height="306" frameX="-80" frameY="-66" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 200000" x="586" y="406" width="525" height="370" frameX="-128" frameY="-34" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 210000" x="586" y="0" width="700" height="379" frameX="-40" frameY="-30" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 220000" x="1286" y="361" width="691" height="356" frameX="-45" frameY="-41" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 230000" x="0" y="779" width="651" height="366" frameX="-65" frameY="-36" frameWidth="781" frameHeight="439" />
+<SubTexture name="textwin 240000" x="0" y="0" width="586" height="406" frameX="-97" frameY="-16" frameWidth="781" frameHeight="439" />
+</TextureAtlas>

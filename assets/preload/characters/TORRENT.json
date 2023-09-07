@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left pose",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				-126
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				78
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 25,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				38,
+				85
+			],
+			"anim": "you will lol this",
+			"fps": 25,
+			"name": "ur going to lol",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/TORRENT",
+	"position": [
+		-30,
+		150
+	],
+	"healthicon": "torrent",
+	"flip_x": false,
+	"healthbar_colors": [
+		249,
+		245,
+		148
+	],
+	"camera_position": [
+		0,
+		10
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

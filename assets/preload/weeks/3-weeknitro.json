@@ -1,0 +1,50 @@
+{
+	"storyName": "Boosting the server",
+	"difficulties": "Easy, Normal, Hard",
+	"hideFreeplay": false,
+	"weekBackground": "viruslPrevNitro",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "WeekTorrentExt",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"kickstart",
+			"nitro",
+			[
+				94,
+				80,
+				255
+			]
+		],
+		[
+			"night-rider",
+			"nitro",
+			[
+				94,
+				80,
+				255
+			]
+		],
+		[
+			"turbocharged",
+			"nitro",
+			[
+				94,
+				80,
+				255
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Nitro Week",
+	"hiddenUntilUnlocked": false
+}

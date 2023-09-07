@@ -1,0 +1,3 @@
+Switch the stage to a different one
+
+Value 1: Stage ID you want it to switch to

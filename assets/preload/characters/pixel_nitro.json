@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "nitro_idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "nitro_down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "nitro_right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "nitro_left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "nitro_up"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/pixel_nitro",
+	"position": [
+		20,
+		340
+	],
+	"healthicon": "pixelNitro",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		115,
+		255
+	],
+	"camera_position": [
+		-270,
+		-170
+	],
+	"sing_duration": 6.1,
+	"scale": 6
+}

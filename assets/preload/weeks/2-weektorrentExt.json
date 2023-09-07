@@ -1,0 +1,50 @@
+{
+	"storyName": "Into the funktrix",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "viruslPrev",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "weekTorrent",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Bitcrush",
+			"torrent",
+			[
+				229,
+				161,
+				33
+			]
+		],
+		[
+			"Firewall",
+			"pixelTorrent",
+			[
+				229,
+				161,
+				33
+			]
+		],
+		[
+			"Subzero",
+			"pixelTorrent",
+			[
+				229,
+				161,
+				33
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "WeekTorrentExtra",
+	"hiddenUntilUnlocked": false
+}

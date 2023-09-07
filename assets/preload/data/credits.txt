@@ -1,0 +1,24 @@
+Troubleshootin Psych Port
+IndyMine::IndyIcon::Made pretty much the whole thing (+ the new icons)::https://www.youtube.com/channel/UCgQ70ypDSLlcBgFgj_amZMg::00762c
+Raltyro::empty::Made the smooth camera script (temporary)::https://gamebanana.com/members/1777465::9B7D7D
+Unholywanderer04::empty::Created the editable ratings script::https://gamebanana.com/members/1908754::146DCC
+
+Original Troubleshootin Team
+DatDavi::empty::Director, Musician, Charter::::C300FF
+Zeroh::empty::Co-director, Artist, Musician::::FFCC00
+PhantomFear::empty::Coder, Artist::::00FFA1
+Rozebud::empty::Coder::::00D8FF
+river::empty::Coder, Artist, Musician::::0043FF
+Shadowfi::empty::Coder::::00D8FF
+snowy~::empty::Coder, Charter::::B200FF
+bibirobo::empty::Artist::::54FFA6
+Cia::empty::Artist::::54FFA6
+genechip::empty::Artist, Musician::::546AFF
+Kospi::empty::Artist::::54FFA6
+mercurie::empty::Artist::::54FFA6
+Mstr_DJ::empty::Artist::::54FFA6
+PincerProd::empty::Artist::::54FFA6
+starrie_blu::empty::Artist::::54FFA6
+Saster::empty::Musician::::DC6BFF
+Squeak::empty::Musician::::DC6BFF
+AYTANNER::empty::Musician, Charter::::FF6BA1

@@ -1,0 +1,50 @@
+{
+	"songs": [
+		[
+			"Torrent",
+			"torrent",
+			[
+				229,
+				161,
+				33
+			]
+		],
+		[
+			"Sensory Overload",
+			"torrent",
+			[
+				229,
+				161,
+				33
+			]
+		],
+		[
+			"Jailbreak",
+			"torrent",
+			[
+				229,
+				161,
+				33
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "viruslPrev",
+	"difficulties": "",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Into the funktrix",
+	"weekName": "WeekTorrent",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

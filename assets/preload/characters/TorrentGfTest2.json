@@ -1,0 +1,144 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-9
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "TORRENT dancing beat",
+			"indices": [
+				30,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-9
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "TORRENT dancing beat",
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-34
+			],
+			"anim": "singDOWN",
+			"fps": 25,
+			"name": "TORRENT down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-16
+			],
+			"anim": "singLEFT",
+			"fps": 25,
+			"name": "TORRENT left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				40
+			],
+			"anim": "singUP",
+			"fps": 25,
+			"name": "TORRENT up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-18
+			],
+			"anim": "singRIGHT",
+			"fps": 25,
+			"name": "TORRENT right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-10
+			],
+			"anim": "cheer",
+			"fps": 25,
+			"name": "TORRENT peace sign",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-11
+			],
+			"anim": "sad",
+			"fps": 25,
+			"name": "TORRENT sad",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/TORRENT_BOOMBOX",
+	"position": [
+		-80,
+		51
+	],
+	"healthicon": "torrent_glasses",
+	"flip_x": false,
+	"healthbar_colors": [
+		249,
+		245,
+		148
+	],
+	"camera_position": [
+		61,
+		149
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

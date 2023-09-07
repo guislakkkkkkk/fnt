@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Pringles_assets.png">
+	<!-- Created with Adobe Animate version 22.0.6.202 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="PRINGLE dancing beat0000" x="3" y="3" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0001" x="916" y="3" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0002" x="1829" y="3" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0003" x="2742" y="3" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0004" x="3" y="569" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0005" x="916" y="569" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0006" x="1829" y="569" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0007" x="2742" y="569" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0008" x="2742" y="569" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0009" x="3" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0010" x="916" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0011" x="916" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0012" x="916" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0013" x="1829" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0014" x="1829" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0015" x="2742" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0016" x="3" y="1701" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0017" x="916" y="1701" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0018" x="1829" y="1701" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0019" x="2742" y="1701" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0020" x="3" y="2267" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0021" x="916" y="2267" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0022" x="1829" y="2267" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0023" x="1829" y="2267" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0024" x="2742" y="2267" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0025" x="3" y="2833" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0026" x="3" y="2833" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0027" x="3" y="2833" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0028" x="1829" y="1135" width="913" height="566"/>
+	<SubTexture name="PRINGLE dancing beat0029" x="1829" y="1135" width="913" height="566"/>
+</TextureAtlas>

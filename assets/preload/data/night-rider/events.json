@@ -1,0 +1,106 @@
+{
+	"song": {
+		"events": [
+			[
+				7500,
+				[
+					[
+						"Hey!",
+						"GF",
+						""
+					]
+				]
+			],
+			[
+				33750,
+				[
+					[
+						"Play Animation",
+						"hey",
+						"Dad"
+					]
+				]
+			],
+			[
+				35750,
+				[
+					[
+						"Play Animation",
+						"hey",
+						"BF"
+					]
+				]
+			],
+			[
+				71625,
+				[
+					[
+						"tv screen thing",
+						"",
+						"AAAA"
+					]
+				]
+			],
+			[
+				99500,
+				[
+					[
+						"Play Animation",
+						"hey",
+						"Dad"
+					]
+				]
+			],
+			[
+				151500,
+				[
+					[
+						"Torrent Error",
+						"AAAAAAAA",
+						"AAAAAAAA"
+					]
+				]
+			],
+			[
+				153500,
+				[
+					[
+						"Light theme switch",
+						"light",
+						""
+					]
+				]
+			],
+			[
+				166125,
+				[
+					[
+						"Play Animation",
+						"enough",
+						"Dad"
+					]
+				]
+			],
+			[
+				167250,
+				[
+					[
+						"Light theme switch",
+						"dark",
+						""
+					]
+				]
+			],
+			[
+				179750,
+				[
+					[
+						"Play Animation",
+						"hey",
+						"Dad"
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"storyName": "Boosting the server (Extra Songs)",
+	"difficulties": "Hard",
+	"hideFreeplay": false,
+	"weekBackground": "viruslPrevNitro",
+	"weekBefore": "WeekTorrentExt",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"giveaway",
+			"pixelNitro",
+			[
+				94,
+				80,
+				255
+			]
+		],
+		[
+			"nexus",
+			"pixelNitro",
+			[
+				94,
+				80,
+				255
+			]
+		],
+		[
+			"shockwave",
+			"nitro",
+			[
+				94,
+				80,
+				255
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Nitro Week EXT"
+}
