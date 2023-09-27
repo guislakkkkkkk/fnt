@@ -1,0 +1,5 @@
+1-weektorrent
+2-weektorrentExt
+3-weeknitro
+4-weeknitroExt
+404
