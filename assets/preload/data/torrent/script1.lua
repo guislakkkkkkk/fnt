@@ -39,7 +39,7 @@ end
 function onUpdate()
 	if dialogueActive then
 		setProperty('HealthbarThing.alpha', 0)
-		if keyJustPressed('accept') and dialogueActive then
+		if mousePressed ('accept') and dialogueActive then
 			dialstage = dialstage + 1
 			playSound('clickText', 1)
 			nextLine(dialstage)

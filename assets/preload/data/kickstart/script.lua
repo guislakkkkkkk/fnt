@@ -23,7 +23,6 @@ end
 
 function onCreatePost()
 	setProperty('reflectionGf.alpha', 0) 
-	setProperty('gf.visible', false)
 end
 
 function onStartCountdown()
@@ -59,6 +58,7 @@ function onUpdate()
 			playSound('clickText', 1)
 			nextLine(dialstage)
 		end
+		
 		if keyJustPressed('back') and dialogueActive then
 			dialogueActive = false
 			doTweenAlpha('dialogueFadeOut', 'diaBg', 0, 1)
@@ -76,7 +76,6 @@ function onUpdate()
 			doTweenAlpha('diaBottom.alpha', 'diaBottom', 0, 1)
 			doTweenAlpha('readingRules.alpha', 'readingRules', 0, 1)
 			setProperty('reflectionGf.alpha', 1) 
-			setProperty('gf.visible', true)
 		end
 	end
 end
@@ -551,7 +550,6 @@ function nextLine(number)
 
 	if number == 13 then
 		setProperty('reflectionGf.alpha', 1) 
-		setProperty('gf.visible', true)
 		setProperty('bfPortrait1.alpha', 0)
 		setProperty('nitroPortrait1.alpha', 0)
 		setProperty('nitroPortrait2.alpha', 0)
