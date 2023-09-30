@@ -1,115 +1,316 @@
-function onCreate()
-	loadGraphic('diaBox', 'dialogue_box', 150)
-	loadGraphic('nitroPortrait1', 'dialogue/nangry', 150)
-	loadGraphic('torrentPortrait1', 'dialogue/t', 150)
-	loadGraphic('diaBG', 'DiaBG', 150)
-	songLength = 152000
 
-	Line1 = ''
-	Line2 = ''
-	L2Progress = 0
-	Line1typed = ''
-	Line2typed = ''
-	typeBuffer = 0
+-- I don't know what to call these animations so I'm just calling them "trails". Idk if they actually have a name.
+
+
+-- The function below sets what steps in the song the trail animations get enabled and disabled. This is what you should edit if you want to use it for your own stuff.
+function onStepHit()
+
+	if curStep == 368 then
+		trailAnimEnabled = true
+	end
+
+	if curStep == 572 then
+		trailAnimEnabled = false
+	end
+
+	if curStep == 959 then
+		trailAnimEnabled = true
+	end
+
+	if curStep == 1088 then
+		trailAnimEnabled = false
+	end
+
+	if curStep == 1471 then
+		trailAnimEnabled = true
+	end
+
 end
 
-function onStartCountdown()
-	
-end
-function onUpdatePost()
-	if typeBuffer == 3 then
-		typeBuffer = 0
-        textProgress = textProgress + 1
-	    Line1typed = Line1typed .. string.sub(Line1, textProgress, textProgress)
-	    setTextString('DiaLine1', Line1typed)
-
-		if Line2 ~= '' then
-			if Line1typed == Line1 then
-				Line1finished = true
+function opponentNoteHit(id, direction, note, isSustainNote)
+	if trailAnimEnabled then
+		if isSustainNote == false then
+			if direction == 0 then
+				makeDadImage(0)
+				dadLeftImageTimer = 0
 			end
-			if Line1finished then
-				L2Progress = L2Progress + 1
-				Line2typed = Line2typed .. string.sub(Line2, L2Progress, L2Progress)
-				setTextString('DiaLine2', Line2typed)
+			if direction == 1 then
+				makeDadImage(1)
+				dadDownImageTimer = 0
+			end
+			if direction == 2 then
+				makeDadImage(2)
+				dadUpImageTimer = 0
+			end
+			if direction == 3 then
+				makeDadImage(3)
+				dadRightImageTimer = 0
+			end
+		else
+			if direction == 0 then
+				if dadLeftImageTimer < 6 then
+					dadLeftImageTimer = dadLeftImageTimer + 1
+				else
+					makeDadImage(0)
+					bfLeftImageTimer = 0
+				end
+			end
+			if direction == 1 then
+				if dadDownImageTimer < 6 then
+					dadDownImageTimer = dadDownImageTimer + 1
+				else
+					makeDadImage(1)
+					dadDownImageTimer = 0
+				end
+			end
+			if direction == 2 then
+				if dadUpImageTimer < 6 then
+					dadUpImageTimer = dadUpImageTimer + 1
+				else
+					makeDadImage(2)
+					dadUpImageTimer = 0
+				end
+			end
+			if direction == 3 then
+				if dadRightImageTimer < 6 then
+					dadRightImageTimer = dadRightImageTimer + 1
+				else
+					makeDadImage(3)
+					dadRightImageTimer = 0
+				end
 			end
 		end
-	else
-		typeBuffer = typeBuffer + 1
 	end
-
 end
 
-function onStepHit()
-	if curStep == 1248 then
-		makeLuaSprite('diaBG', 'DiaBG', 0, 0)
-		makeLuaSprite('nitroPortrait1', 'dialogue/nangry', -80, -80)
-		makeLuaSprite('torrentPortrait1', 'dialogue/t', -80, -80)
-		makeLuaSprite('diaBox', 'dialogue_box', 50, 400)
-		
-		setProperty('torrentPortrait1.scale.x', 0.75)
-		setProperty('torrentPortrait1.scale.y', 0.75)
-		setProperty('nitroPortrait1.scale.x', 0.75)
-		setProperty('nitroPortrait1.scale.y', 0.75)
-
-		setObjectCamera('diaBG', 'hud')
-		setObjectCamera('nitroPortrait1', 'hud')
-		setObjectCamera('torrentPortrait1', 'hud')
-		setObjectCamera('diaBox', 'hud')
-
-		addLuaSprite('diaBG', true)
-		addLuaSprite('torrentPortrait1', true)
-		addLuaSprite('diaBox', true)
-
-		makeLuaText('DiaLine1', '', 0, 230, 490)
-		Line1 = 'Ah, Much better.'
-		textProgress = 0
-		setTextAlignment('DiaLine1', 'left')
-		setTextFont('DiaLine1', 'PIXEAB__.ttf')
-		setTextSize('DiaLine1', '32')
-		setObjectCamera('DiaLine1', 'hud')
-		addLuaText('DiaLine1', true)
-
-		makeLuaText('DiaLine2', '', 0, 230, 535)
-		setTextAlignment('DiaLine2', 'left')
-		setTextFont('DiaLine2', 'PIXEAB__.ttf')
-		setTextSize('DiaLine2', '32')
-		setObjectCamera('DiaLine2', 'hud')
+function goodNoteHit(id, direction, note, isSustainNote)
+	if trailAnimEnabled then
+		if isSustainNote == false then
+			if direction == 0 then
+				makeBfImage(0)
+				bfLeftImageTimer = 0
+			end
+			if direction == 1 then
+				makeBfImage(1)
+				bfDownImageTimer = 0
+			end
+			if direction == 2 then
+				makeBfImage(2)
+				bfUpImageTimer = 0
+			end
+			if direction == 3 then
+				makeBfImage(3)
+				bfRightImageTimer = 0
+			end
+		else
+			if direction == 0 then
+				if bfLeftImageTimer < 6 then
+					bfLeftImageTimer = bfLeftImageTimer + 1
+				else
+					makeBfImage(0)
+					bfLeftImageTimer = 0
+				end
+			end
+			if direction == 1 then
+				if bfDownImageTimer < 6 then
+					bfDownImageTimer = bfDownImageTimer + 1
+				else
+					makeBfImage(1)
+					bfDownImageTimer = 0
+				end
+			end
+			if direction == 2 then
+				if bfUpImageTimer < 6 then
+					bfUpImageTimer = bfUpImageTimer + 1
+				else
+					makeBfImage(2)
+					bfUpImageTimer = 0
+				end
+			end
+			if direction == 3 then
+				if bfRightImageTimer < 6 then
+					bfRightImageTimer = bfRightImageTimer + 1
+				else
+					makeBfImage(3)
+					bfRightImageTimer = 0
+				end
+			end
+		end
 	end
-	if curStep == 1262 then
-		addLuaSprite('nitroPortrait1', true)
-		setTextString('DiaLine1', '')
-		Line1 = 'Agh what have you done!?'
-		textProgress = 0
-		Line1typed = ''
-		setProperty('torrentPortrait1.alpha', 0)
-		setObjectOrder('nitroPortrait1', getObjectOrder('nitroPortrait1')-2)
+end
+
+function makeBfImage(note)
+	if note == 0 then
+		if bfLeftImageBuffer == 'imageBfleft1' then
+			bfLeftImageBuffer = 'imageBfleft2'
+		else
+			if bfLeftImageBuffer == 'imageBfleft2' then
+				bfLeftImageBuffer = 'imageBfleft3'
+			else
+				bfLeftImageBuffer = 'imageBfleft1'
+			end
+		end
+		makeAnimatedLuaSprite(bfLeftImageBuffer, getProperty('boyfriend.imageFile'), getProperty('boyfriend.x'), getProperty('boyfriend.y'))
+		addAnimationByIndices(bfLeftImageBuffer, 'left', 'BF NOTE LEFT0', '0,1', 24)
+		objectPlayAnimation(bfLeftImageBuffer, 'left', true)
+		addLuaSprite(bfLeftImageBuffer, false)
+		setProperty(bfLeftImageBuffer .. '.offset.x', 5)
+		setProperty(bfLeftImageBuffer .. '.offset.y', -6)
+		doTweenX(bfLeftImageBuffer .. '.x', bfLeftImageBuffer, getProperty('boyfriend.x')-60, 0.4, 'expoOut')
+		setObjectOrder(bfLeftImageBuffer, getObjectOrder('boyfriendGroup')-1)
+		doTweenAlpha(bfLeftImageBuffer .. '.alpha', bfLeftImageBuffer, 0, 0.4, 'sineOut')
 	end
-	if curStep == 1280 then
-		setProperty('nitroPortrait1.alpha', 0)
-		setTextString('DiaLine1', '')
-		Line1 = 'Well i always preferred light'
-		textProgress = 0
-		Line1typed = ''
-		Line2 = 'mode'
-		Line2typed = ''
-		addLuaText('DiaLine2', true)
-		setTextString('DiaLine2', '')
-		setProperty('torrentPortrait1.alpha', 1)
-		setObjectOrder('nitroPortrait1', getObjectOrder('nitroPortrait1')-2)
+
+	if note == 1 then
+		if bfDownImageBuffer == 'imageBfdown1' then
+			bfDownImageBuffer = 'imageBfdown2'
+		else
+			if bfDownImageBuffer == 'imageBfdown2' then
+				bfDownImageBuffer = 'imageBfdown3'
+			else
+				bfDownImageBuffer = 'imageBfdown1'
+			end
+		end
+		makeAnimatedLuaSprite(bfDownImageBuffer, getProperty('boyfriend.imageFile'), getProperty('boyfriend.x'), getProperty('boyfriend.y'))
+		addAnimationByIndices(bfDownImageBuffer, 'down', 'BF NOTE DOWN0', '0,1', 24)
+		objectPlayAnimation(bfDownImageBuffer, 'down', true)
+		addLuaSprite(bfDownImageBuffer, false)
+		setProperty(bfDownImageBuffer .. '.offset.x', -20)
+		setProperty(bfDownImageBuffer .. '.offset.y', -51)
+		doTweenY(bfDownImageBuffer .. '.y', bfDownImageBuffer, getProperty('boyfriend.y')+60, 0.4, 'expoOut')
+		setObjectOrder(bfDownImageBuffer, getObjectOrder('boyfriendGroup')-1)
+		doTweenAlpha(bfDownImageBuffer .. '.alpha', bfDownImageBuffer, 0, 0.4, 'sineOut')
 	end
-	if curStep == 1312 then
-		makeLuaSprite('trollent', 'BOOOOOOOOOOO', 0, 0)
-		addLuaSprite('trollent', true)
-		setObjectCamera('trollent', 'hud')
-		doTweenAlpha('aspjdfaoiefheswigf', 'trollent', 0, 1, 'quadIn')
+
+	if note == 2 then
+		if bfUpImageBuffer == 'imageBfup1' then
+			bfUpImageBuffer = 'imageBfup2'
+		else
+			if bfUpImageBuffer == 'imageBfup2' then
+				bfUpImageBuffer = 'imageBfup3'
+			else
+				bfUpImageBuffer = 'imageBfup1'
+			end
+		end
+		makeAnimatedLuaSprite(bfUpImageBuffer, getProperty('boyfriend.imageFile'), getProperty('boyfriend.x'), getProperty('boyfriend.y'))
+		addAnimationByIndices(bfUpImageBuffer, 'up', 'BF NOTE UP0', '0,1', 24)
+		objectPlayAnimation(bfUpImageBuffer, 'up', true)
+		addLuaSprite(bfUpImageBuffer, false)
+		setProperty(bfUpImageBuffer .. '.offset.x', -46)
+		setProperty(bfUpImageBuffer .. '.offset.y', 27)
+		doTweenY(bfUpImageBuffer .. '.y', bfUpImageBuffer, getProperty('boyfriend.y')-60, 0.4, 'expoOut')
+		setObjectOrder(bfUpImageBuffer, getObjectOrder('boyfriendGroup')-1)
+		doTweenAlpha(bfUpImageBuffer .. '.alpha', bfUpImageBuffer, 0, 0.4, 'sineOut')
 	end
-	if curStep == 1324 then
-		setProperty('nitroPortrait1.alpha', 0)
-		setProperty('torrentPortrait1.alpha', 0)
-		setProperty('DiaLine1.alpha', 0)
-		setProperty('DiaLine2.alpha', 0)
-		setProperty('diaBox.alpha', 0)
-		setProperty('diaBG.alpha', 0)
-		songLength = 197000
+
+	if note == 3 then
+		if bfRightImageBuffer == 'imageBfright1' then
+			bfRightImageBuffer = 'imageBfright2'
+		else
+			if bfRightImageBuffer == 'imageBfright2' then
+				bfRightImageBuffer = 'imageBfright3'
+			else
+				bfRightImageBuffer = 'imageBfright1'
+			end
+		end
+		makeAnimatedLuaSprite(bfRightImageBuffer, getProperty('boyfriend.imageFile'), getProperty('boyfriend.x'), getProperty('boyfriend.y'))
+		addAnimationByIndices(bfRightImageBuffer, 'right', 'BF NOTE RIGHT0', '0,1', 24)
+		objectPlayAnimation(bfRightImageBuffer, 'right', true)
+		addLuaSprite(bfRightImageBuffer, false)
+		setProperty(bfRightImageBuffer .. '.offset.x', -48)
+		setProperty(bfRightImageBuffer .. '.offset.y', -7)
+		doTweenX(bfRightImageBuffer .. '.x', bfRightImageBuffer, getProperty('boyfriend.x')+60, 0.4, 'expoOut')
+		setObjectOrder(bfRightImageBuffer, getObjectOrder('boyfriendGroup')-1)
+		doTweenAlpha(bfRightImageBuffer .. '.alpha', bfRightImageBuffer, 0, 0.4, 'sineOut')
+	end
+end
+
+
+
+
+
+function makeDadImage(note)
+	if note == 0 then
+		if dadLeftImageBuffer == 'imageDadLeft1' then
+			dadLeftImageBuffer = 'imageDadLeft2'
+		else
+			if dadLeftImageBuffer == 'imageDadLeft2' then
+				dadLeftImageBuffer = 'imageDadLeft3'
+			else
+				dadLeftImageBuffer = 'imageDadLeft1'
+			end
+		end
+		makeAnimatedLuaSprite(dadLeftImageBuffer, getProperty('dad.imageFile'), getProperty('dad.x'), getProperty('dad.y'))
+		addAnimationByIndices(dadLeftImageBuffer, 'left', 'nitro_left', '0,1', 24)
+		objectPlayAnimation(dadLeftImageBuffer, 'left', true)
+		addLuaSprite(dadLeftImageBuffer, false)
+		setProperty(dadLeftImageBuffer .. '.offset.x', 0)
+		setProperty(dadLeftImageBuffer .. '.offset.y', 0)
+		doTweenX(dadLeftImageBuffer .. '.x', dadLeftImageBuffer, getProperty('dad.x')-60, 0.4, 'expoOut')
+		setObjectOrder(dadLeftImageBuffer, getObjectOrder('dadGroup')-1)
+		doTweenAlpha(dadLeftImageBuffer .. '.alpha', dadLeftImageBuffer, 0, 0.4, 'sineOut')
+	end
+
+	if note == 1 then
+		if dadDownImageBuffer == 'imageDadDown1' then
+			dadDownImageBuffer = 'imageDadDown2'
+		else
+			if dadDownImageBuffer == 'imageDadDown2' then
+				dadDownImageBuffer = 'imageDadDown3'
+			else
+				dadDownImageBuffer = 'imageDadDown1'
+			end
+		end
+		makeAnimatedLuaSprite(dadDownImageBuffer, getProperty('dad.imageFile'), getProperty('dad.x'), getProperty('dad.y'))
+		addAnimationByIndices(dadDownImageBuffer, 'down', 'nitro_down', '0,1', 24)
+		objectPlayAnimation(dadDownImageBuffer, 'down', true)
+		addLuaSprite(dadDownImageBuffer, false)
+		setProperty(dadDownImageBuffer .. '.offset.x', 0)
+		setProperty(dadDownImageBuffer .. '.offset.y', -46)
+		doTweenY(dadDownImageBuffer .. '.y', dadDownImageBuffer, getProperty('dad.y')+60, 0.4, 'expoOut')
+		setObjectOrder(bfDownImageBuffer, getObjectOrder('dadGroup')-1)
+		doTweenAlpha(dadDownImageBuffer .. '.alpha', dadDownImageBuffer, 0, 0.4, 'sineOut')
+	end
+
+	if note == 2 then
+		if dadUpImageBuffer == 'imageDadUp1' then
+			dadUpImageBuffer = 'imageDadUp2'
+		else
+			if dadUpImageBuffer == 'imageDadUp2' then
+				dadUpImageBuffer = 'imageDadUp3'
+			else
+				dadUpImageBuffer = 'imageDadUp1'
+			end
+		end
+		makeAnimatedLuaSprite(dadUpImageBuffer, getProperty('dad.imageFile'), getProperty('dad.x'), getProperty('dad.y'))
+		addAnimationByIndices(dadUpImageBuffer, 'up', 'nitro_up', '0,1', 24)
+		objectPlayAnimation(dadUpImageBuffer, 'up', true)
+		addLuaSprite(dadUpImageBuffer, false)
+		setProperty(dadUpImageBuffer .. '.offset.x', 14)
+		setProperty(dadUpImageBuffer .. '.offset.y', 37)
+		doTweenY(dadUpImageBuffer .. '.y', dadUpImageBuffer, getProperty('dad.y')-60, 0.4, 'expoOut')
+		setObjectOrder(dadUpImageBuffer, getObjectOrder('dadGroup')-1)
+		doTweenAlpha(dadUpImageBuffer .. '.alpha', dadUpImageBuffer, 0, 0.4, 'sineOut')
+	end
+
+	if note == 3 then
+		if dadRightImageBuffer == 'imageDadRight1' then
+			dadRightImageBuffer = 'imageDadRight2'
+		else
+			if dadRightImageBuffer == 'imageDadRight2' then
+				dadRightImageBuffer = 'imageDadRight3'
+			else
+				dadRightImageBuffer = 'imageDadRight1'
+			end
+		end
+		makeAnimatedLuaSprite(dadRightImageBuffer, getProperty('dad.imageFile'), getProperty('dad.x'), getProperty('dad.y'))
+		addAnimationByIndices(dadRightImageBuffer, 'right', 'nitro_right', '0,1', 24)
+		objectPlayAnimation(dadRightImageBuffer, 'right', true)
+		addLuaSprite(dadRightImageBuffer, false)
+		setProperty(dadRightImageBuffer .. '.offset.x', -20)
+		setProperty(dadRightImageBuffer .. '.offset.y', 0)
+		doTweenX(dadRightImageBuffer .. '.x', dadRightImageBuffer, getProperty('dad.x')+60, 0.4, 'expoOut')
+		setObjectOrder(dadRightImageBuffer, getObjectOrder('dadGroup')-1)
+		doTweenAlpha(dadRightImageBuffer .. '.alpha', dadRightImageBuffer, 0, 0.4, 'sineOut')
 	end
 end

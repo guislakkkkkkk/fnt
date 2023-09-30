@@ -29,23 +29,46 @@ function onCreate()
 	setProperty('reflectionBf.angle', 180)
 	setBlendMode('reflectionBf', 'screen')
 	setProperty('reflectionBf.alpha', 1)
-	
-	makeAnimatedLuaSprite('reflectionGf', 'characters/TORRENT_BOOMBOX', getProperty('gf.x'), getProperty('gf.y')+300)
+
+	makeAnimatedLuaSprite('reflectionGf', 'characters/Pringles_assets', getProperty('gf.x'), getProperty('gf.y')+300)
 	addLuaSprite('reflectionGf', false)
-	addAnimationByIndices('reflectionGf', 'danceL', 'TORRENT dancing beat', '27,0,1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12', 24)
-	addAnimationByIndices('reflectionGf', 'danceR', 'TORRENT dancing beat', '13,15,16,17,18,19,20,21,22,23,24,25,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27', 24)
-	addAnimationByIndices('reflectionGf', 'left', 'TORRENT left', '1,2,3,4,5,6,7,8,9,10', 24)
-	addAnimationByIndices('reflectionGf', 'down', 'TORRENT down', '1,2,3,4,5,6,7,8,9,10', 24)
-	addAnimationByIndices('reflectionGf', 'up', 'TORRENT up', '1,2,3,4,5,6,7,8,9,10', 24)
-	addAnimationByIndices('reflectionGf', 'right', 'TORRENT right', '1,2,3,4,5,6,7,8,9,10', 24)
-	addAnimationByIndices('reflectionGf', 'hey-loop', 'TORRENT peace sign', '5,6,7,8,9,10,11,12,13,14,15,16,17,18,19', 24)
+	addAnimationByIndices('reflectionGf', 'danceL', 'PRINGLE dancing beat', '27,0,1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12', 24)
+	addAnimationByIndices('reflectionGf', 'danceR', 'PRINGLE dancing beat', '13,15,16,17,18,19,20,21,22,23,24,25,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27', 24)
 	setProperty('reflectionGf.flipX', true)
 	setProperty('reflectionGf.angle', 180)
 	setBlendMode('reflectionGf', 'screen')
 	setProperty('reflectionGf.alpha', 1)
-	setObjectOrder('reflectionGf', getObjectOrder('stage1')+1)
 	setProperty('reflectionGf.scale.x', 0.8)
 	setProperty('reflectionGf.scale.y', 0.8)
+	
+	makeAnimatedLuaSprite('reflectionGf1', 'characters/pringles_dies', getProperty('gf.x')-136, getProperty('gf.y')+281)
+	addLuaSprite('reflectionGf1', false)
+	addAnimationByPrefix('reflectionGf1', 'die', 'pringles death', 24, false)
+	setProperty('reflectionGf1.flipX', true)
+	setProperty('reflectionGf1.angle', 180)
+	setBlendMode('reflectionGf1', 'screen')
+	setProperty('reflectionGf1.alpha', 0.0001)
+	setProperty('reflectionGf1.scale.x', 0.8)
+	setProperty('reflectionGf1.scale.y', 0.8)
+	
+	makeAnimatedLuaSprite('reflectionGf2', 'characters/TORRENT_BOOMBOX', getProperty('gf.x'), getProperty('gf.y')+300)
+	addLuaSprite('reflectionGf2', false)
+	addAnimationByIndices('reflectionGf2', 'danceL', 'TORRENT dancing beat', '27,0,1,2,3,4,5,6,7,8,9,10,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12', 24)
+	addAnimationByIndices('reflectionGf2', 'danceR', 'TORRENT dancing beat', '13,15,16,17,18,19,20,21,22,23,24,25,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27', 24)
+	addAnimationByIndices('reflectionGf2', 'left', 'TORRENT left', '1,2,3,4,5,6,7,8,9,10', 24)
+	addAnimationByIndices('reflectionGf2', 'down', 'TORRENT down', '1,2,3,4,5,6,7,8,9,10', 24)
+	addAnimationByIndices('reflectionGf2', 'up', 'TORRENT up', '1,2,3,4,5,6,7,8,9,10', 24)
+	addAnimationByIndices('reflectionGf2', 'right', 'TORRENT right', '1,2,3,4,5,6,7,8,9,10', 24)
+	addAnimationByIndices('reflectionGf2', 'hey-loop', 'TORRENT peace sign', '5,6,7,8,9,10,11,12,13,14,15,16,17,18,19', 24)
+	setProperty('reflectionGf2.flipX', true)
+	setProperty('reflectionGf2.angle', 180)
+	setBlendMode('reflectionGf2', 'screen')
+	setProperty('reflectionGf2.alpha', 0.0001)
+	setObjectOrder('reflectionGf', getObjectOrder('stage1')+1)
+	setObjectOrder('reflectionGf1', getObjectOrder('reflectionGf')+1)
+	setObjectOrder('reflectionGf2', getObjectOrder('reflectionGf1')+1)
+	setProperty('reflectionGf2.scale.x', 0.8)
+	setProperty('reflectionGf2.scale.y', 0.8)
 
 end
 
@@ -169,7 +192,23 @@ function goodNoteHit(id, direction, note, sus)
 end
 function onCreatePost()
 	setObjectOrder('reflectionGf', getObjectOrder('platformTop')+1)
-	setObjectOrder('reflectionDad', getObjectOrder('reflectionGf')+1)
+	setObjectOrder('reflectionGf1', getObjectOrder('reflectionGf')+1)
+	setObjectOrder('reflectionGf2', getObjectOrder('reflectionGf1')+1)
+	setObjectOrder('reflectionDad', getObjectOrder('reflectionGf2')+1)
 	setObjectOrder('reflectionBf', getObjectOrder('reflectionDad')+1)
 	setObjectOrder('platformBottom', getObjectOrder('reflectionBf')+1)
+end
+
+function onStepHit()
+	--if curStep == 704 then
+	if curStep == 704 then
+		setProperty('reflectionGf.alpha', 0.0001)
+		setProperty('reflectionGf1.alpha', 1)
+		objectPlayAnimation('reflectionGf1', 'die', true)
+	end
+	--if curStep == 720 then
+	if curStep == 720 then
+		setProperty('reflectionGf1.alpha', 0.0001)
+		setProperty('reflectionGf2.alpha', 1)
+	end
 end
